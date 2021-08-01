@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report1" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0f808e66-bf61-40b9-82a9-ddf3d18194ef">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from empresa]]>
+	</queryString>
+	<field name="idempresa" class="java.lang.Integer"/>
+	<field name="designacao" class="java.lang.String"/>
+	<field name="nif" class="java.lang.String"/>
+	<field name="registo_comercial" class="java.lang.String"/>
+	<field name="razao_social" class="java.lang.String"/>
+	<field name="telefone" class="java.lang.Integer"/>
+	<field name="email" class="java.lang.String"/>
+	<field name="web_site" class="java.lang.String"/>
+	<field name="pais" class="java.lang.String"/>
+	<field name="provincia" class="java.lang.String"/>
+	<field name="rua" class="java.lang.String"/>
+	<field name="edificio" class="java.lang.String"/>
+	<field name="codigo_postal" class="java.lang.String"/>
+	<field name="imagem_logotipo" class="java.lang.String"/>
+	<field name="foto" class="java.lang.Object"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="79" uuid="3bca5de8-9111-4cc9-a9c7-986daaaac9dd"/>
+				<textElement textAlignment="Center">
+					<font size="24"/>
+				</textElement>
+				<text><![CDATA[Minha loja]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="35" uuid="078e00df-3188-4849-83ac-3608fe4fc4bc"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Empresa]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="39" height="20" uuid="b54b2aee-e845-4494-86a8-8694e13f4550"/>
+				<text><![CDATA[designacao]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="0" width="39" height="20" uuid="fde6027f-903e-40cc-bedd-50682a039f2c"/>
+				<text><![CDATA[nif]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="78" y="0" width="39" height="20" uuid="f3e8070b-6134-473d-a58b-5123082ae4a4"/>
+				<text><![CDATA[registo_comercial]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="117" y="0" width="39" height="20" uuid="1c67240a-d5d8-422c-98fe-971a356e976c"/>
+				<text><![CDATA[razao_social]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="156" y="0" width="39" height="20" uuid="ce74170f-1f0b-4f7e-9d90-8dca70ad8254"/>
+				<text><![CDATA[telefone]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="195" y="0" width="39" height="20" uuid="72f45bd5-a483-4cec-8deb-3762f83ff13e"/>
+				<text><![CDATA[email]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="234" y="0" width="39" height="20" uuid="4a382875-3cb1-4c0c-af96-04c9692dbf86"/>
+				<text><![CDATA[web_site]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="273" y="0" width="39" height="20" uuid="7c32f587-e573-48cf-9a20-03a0d1c84d4d"/>
+				<text><![CDATA[pais]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="312" y="0" width="39" height="20" uuid="de82982a-d7f8-43c7-944b-0d7664ca6549"/>
+				<text><![CDATA[provincia]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="351" y="0" width="39" height="20" uuid="adebfde5-cb05-4993-b889-ec343031c10b"/>
+				<text><![CDATA[rua]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="390" y="0" width="39" height="20" uuid="f433922f-8804-4ae0-aa08-1a4919c4ae0b"/>
+				<text><![CDATA[edificio]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="429" y="0" width="39" height="20" uuid="1ea7344a-1de2-469e-bf70-48762c76a7f1"/>
+				<text><![CDATA[codigo_postal]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="468" y="0" width="39" height="20" uuid="fbab4f7f-8af9-4f5d-bea1-e7f38a6125e1"/>
+				<text><![CDATA[imagem_logotipo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="507" y="0" width="39" height="20" uuid="6e611bb1-edce-4144-88f0-1992f1156114"/>
+				<text><![CDATA[foto]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="39" height="20" uuid="f44ba16e-b1e8-43b0-8a95-c730087a6d57"/>
+				<textFieldExpression><![CDATA[$F{designacao}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="39" y="0" width="39" height="20" uuid="56df06e6-88e2-4492-a24b-9c94eed8512f"/>
+				<textFieldExpression><![CDATA[$F{nif}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="78" y="0" width="39" height="20" uuid="290bf915-03ca-42c7-bde0-6bfc156aabf0"/>
+				<textFieldExpression><![CDATA[$F{registo_comercial}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="117" y="0" width="39" height="20" uuid="0252d158-1ce1-4aaa-b2fe-774e6a2cbb5e"/>
+				<textFieldExpression><![CDATA[$F{razao_social}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="156" y="0" width="39" height="20" uuid="3553356d-c37a-4fb1-9f2a-e1248c025f45"/>
+				<textFieldExpression><![CDATA[$F{telefone}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="195" y="0" width="39" height="20" uuid="5e6efffb-a5f2-4e73-b304-daa450b3c016"/>
+				<textFieldExpression><![CDATA[$F{email}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="234" y="0" width="39" height="20" uuid="340f08c0-d94b-4378-aca9-9620adddb31c"/>
+				<textFieldExpression><![CDATA[$F{web_site}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="273" y="0" width="39" height="20" uuid="161651e4-dc16-4154-8cba-51db60480acb"/>
+				<textFieldExpression><![CDATA[$F{pais}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="312" y="0" width="39" height="20" uuid="721179f0-ee71-4d7e-8874-aa7e26637655"/>
+				<textFieldExpression><![CDATA[$F{provincia}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="351" y="0" width="39" height="20" uuid="6d86bde1-391d-43e7-8f7c-a2da1329e8ef"/>
+				<textFieldExpression><![CDATA[$F{rua}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="390" y="0" width="39" height="20" uuid="09d05a45-c2b8-4fef-b946-0ac16dae3f18"/>
+				<textFieldExpression><![CDATA[$F{edificio}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="429" y="0" width="39" height="20" uuid="7249ceee-01f3-43a6-a872-1d00cec3fa9a"/>
+				<textFieldExpression><![CDATA[$F{codigo_postal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="468" y="0" width="39" height="20" uuid="3940569f-8575-483b-afcd-471cfde91c1a"/>
+				<textFieldExpression><![CDATA[$F{imagem_logotipo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="507" y="0" width="39" height="20" uuid="5339c585-c961-4a74-82fa-23e2286d1eb5"/>
+				<textFieldExpression><![CDATA[""+$F{foto}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
